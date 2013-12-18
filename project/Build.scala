@@ -12,7 +12,8 @@ object ApplicationBuild extends Build {
     "com.typesafe" %% "play-plugins-mailer" % "2.1.0",
     jdbc,
     anorm,
-    filters
+    filters,
+    "com.nulab-inc" %% "play2-oauth2-provider" % "0.3.0"
   )
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
